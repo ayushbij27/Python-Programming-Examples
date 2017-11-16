@@ -4,7 +4,7 @@ from gtts import gTTS
 import os
  
 # The text that you want to convert to audio
-mytext = 'Wannna Suck your boobs'
+mytext = 'hello'
 
 language = 'en'
  
