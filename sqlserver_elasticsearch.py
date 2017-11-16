@@ -1,4 +1,4 @@
-from elasticsearch import elasticsearch
+from elasticsearch import Elasticsearch
 from os import getenv
 import pymssql
 import sys
@@ -36,7 +36,7 @@ for row in cursor:
 a=0
 for p in return_list:
 	a=a+1
-	res = connES.index(index=index, doc_type='doc_type', id=a, body=p)
+	res = connES.index(index='index', doc_type='doc_type', id=a, body=p)
 print(res['created'])
 
 # conn.close()
