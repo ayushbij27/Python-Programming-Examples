@@ -20,7 +20,7 @@ database = "testing"
 conn = pymssql.connect(server, user, password, database)
 
 cursor = conn.cursor()
-cursor.execute('select * from ayushkitable')
+cursor.execute('select * from table')
 def return_dict_pair(row_item):
 	return_dict = {}
 	for column_name, row in zip(cursor.description, row_item):
